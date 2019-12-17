@@ -220,7 +220,12 @@ function firstNamesAllCaps(runners) {
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
 function getRunnersByTShirtSize(runners, tShirtSize) {
-  
+  let newList = runners.filter((elm) => {
+    if (tShirtSize == elm.shirt_size){
+      return elm;
+    } 
+  })
+  return newList;
 }
 
 /**
